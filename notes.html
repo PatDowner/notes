@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+</head>
+
+<body>
+  <h1>Monday, Sept 21, 2020</h1>
+  <ul>
+    <li>Admin1 announcements</li>
+    <ul>
+      <li>Alumni events sometimes happen</li>
+      <li>Back up slack</li>
+      <li>Alumni slack</li>
+      <li>Digital badges</li>
+    </ul>
+    <li>Day 51 of class!!! Wow.</li>
+    <li>Basically an intro to comp-sci class today</li>
+    <li><b>Topics:</b></li>
+    <ul>
+      <li>Algorithms</li>
+      <li>Timing</li>
+      <li>Sorting</li>
+      <li>Big O</li>
+      <li>Data Structures</li>
+    </ul>
+    <li><b>Algorithms</b></li>
+    <li>Basic set of steps to perform a task</li>
+    <li><b>Timing</b></li>
+    <li>Benchmark: it's an npm that lets you see how long something takes to run</li>
+    <li>constructor Benchmark. Create a new Benchmark.Suite()</li>
+    <li>For the .on('complete'...) function, can't do arrow function b/c you want to use 'this'</li>
+  </ul>
+
+  <h1>Friday, Sept 18, 2020</h1>
+  <ul>
+    <li>MERN -- mongo, express, react, node</li>
+    <li>MAKE SURE YOU"RE IN THE REPO FOLDER FOR THIS STEP: npx create-react-app client</li>
+    <li>In Backend (not in client folder) package.json paste:</li>
+    <ul>
+      <li>"scripts": {
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prods": "node server.js",
+      "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+      "client": "cd client && npm run start",
+      "install": "cd client && npm install",
+      "build": "cd client && npm run build",
+      "heroku-postbuild": "npm run build"
+      }</li>
+    </ul>
+    <li>front end package.json needs </li>
+  </ul>
+  
+
+  <h1>Thursday, Sept 17, 2020</h1>
+  <ul>
+    <li><a href="https://github.com/gitname/react-gh-pages">Deploy React to GitHub</a></li>
+    <li><a href="https://reactrouter.com/">React router</a></li>
+    <li><b><a href="https://reactstrap.github.io/">Reactstrap</a> styling library</b></li>
+    <li>npm i bootstrap reactstrap</li>
+    <li><b>Project 3 Requirements</b></li>
+    <ul>
+      <li>Must use ReactJS.</li>
+      <li>Must use a Node and Express Web Server.</li>
+      <li>Must be backed by a MongoDB Database with a Mongoose ODM.</li>
+      <li>Must have both GET and POST routes for retrieving and adding new data.</li>
+      <li>Must be deployed using Heroku (with Data).</li>
+      <li>Must utilize at least two libraries, packages, or technologies that we haven't discussed. ---- think about something you want your app to do it, search if there's an NPM that does it</li>
+      <li>Must allow for or involve the authentication of users in some way. ---- either passport or fake authentication</li>
+      <li>Must have a polished frontend / UI.</li>
+      <li>Must have folder structure that meets MVC Paradigm. ---- models folder & routes folder</li>
+      <li>Must meet good quality coding standards (indentation, scoping, naming).</li>
+    </ul>
+  </ul>
+
+  <h1>Wednesday, Sept 16, 2020</h1>
+  <ul>
+    <li>Component Lifecycle Methods</li>
+    <li>render = current</li>
+    <li>componentDidMount ---- for logic after it puts stuff</li>
+    <li>etc</li>
+    <li>Mainly</li>
+  </ul>
+
+  <h1>Tuesday, Sept 15, 2020</h1>
+  <ul>
+    <li>Older versions of React had "smart components", but there's a cleaner way in the newer version (React Hooks) to do functionality</li>
+    <li>React: no more of the get element by id stuff</li>
+    <li>Activity: movie code. Form: title, poster link, plot. Renders a card w/ that data.</li>
+
+  </ul>
+
+  <h1>Monday, Sept 14, 2020</h1>
+  <ul>
+    <li>Project 3 group: Eric, Makoto, and Matt</li>
+    <li>Starting React</li>
+    <li>Have to use MongoDB & React for project</li>
+    <li>Progressive web app stuff not a requirement</li>
+    <li><b>React</b>: It's a JS library</li>
+    <li>You can use a file for putting the same chunk of code in multiple places</li>
+    <li><b>Babeljs</b></li>
+    <ul>
+      <li>Uses the newer JS stuff (a LOT of what we've learned is "newer"</li>
+      <li>But helps it be more compatible with older browser compatible JS</li>
+    </ul>
+    <li><b>Webpack</b> -- helps take the modularization from the React structure and packs them together into a small
+      cohesive selection of static files for front end</li>
+    <li>React is actually from FB</li>
+    <li>Yarn is like NPM, but it's run by FB <i>AND</i> it reports back to FB each time a NPM is installed</li>
+    <li>Digging into React</li>
+    <li>NPM: create react app --- sets up the starter files for you: "npx create-react-app [folder/repo name]"</li>
+    <li>Unnecessary thigns to remove:</li>
+    <ul>
+      <li>Public folder: Favicon, logo and logo</li>
+      <li>Src folder: app.css, test, index.css, logo, setup test file</li>
+      <li>your duplicate readme</li>
+    </ul>
+    <li>modify them</li>
+    <ul>
+      <li>Index.js: "import index css" delete</li>
+      <li>app.js: remove lines 2-3 and remove everything inside the return statement that starts on line 4 (after
+        deleting the previous 2 lines)</li>
+    </ul>
+    <li>In app.js file</li>
+    <ul>
+      <li>The line about requiring stuff at the start of js files, is equal to "import React from 'react'"</li>
+      <li>in the const App function, you write the HTML in the return statement. But it's not <i>REALLY</i> HTML? It's
+        JSX = javascript in xml. It's rendered into the 'root' div (see index file with ReactDOM whre it says to put it
+        in root.</li>
+      <li>The line about module exports is equal to "export default App"</li>
+    </ul>
+    <li>Global styling objects</li>
+    <li>Activity: Profile page</li>
+    <ul>
+      <li>use styling library</li>
+      <li>use components that make sense</li>
+      <li>How do you determine if it should? Is the element size worthy of having its own file. A button? No. A form?
+        Yes</li>
+    </ul>
+  </ul>
+
+
+  <h1>Thursday, Sept 10, 2020</h1>
+  <ul>
+    <li>So far we had been using JawsDB to deploy on Heroku ... that's only for MySQL</li>
+    <li>So you use Atlas instead</li>
+    <li><b>Steps to deploy via Atlas</b></li>
+    <ul>
+      <li>Under clusters, click collections</li>
+      <li>Grey, add my own data</li>
+      <li>DB name and collection name</li>
+      <li>plus sign for other collections</li>
+      <li>Then go to Heroku</li>
+      <ul>
+        <li>VS Code, commit --> push to github --> Heroku create</li>
+        <li>Heroku Site: settings page --> reveal config bars --> config vars --> MONGODB_URI</li>
+        <li>In atlas, in DB, click connect in top right (note: be sure you're in the overview tab) --> connect existing
+          application --> copy connection string in box --> paste into box next to the MONGODB_URI. But you need your
+          atlas username:password</li>
+      </ul>
+      <li>index.js db, do process.env.MONGODB_URI || 'mongodb://localhost/todo_db</li>
+      <li>instead of 3000 in server.js do: process.env.PORT || 3000</li>
+      <li>commit code --> push to github --> push to Heroku</li>
+    </ul>
+    <li>at that point you can test things in postman will also show up in Atlas</li>
+
+
+    <li><b><u>User Authentication</u></b></li>
+    <li>Algorithms create randomized (which is actually programatically created, so it's unique to your exact entered
+      password) password from the one you use</li>
+    <li>The generated "random" password is called a hash. Usually 300ish characters which make it very secure</li>
+    <li>So you log in with "hotdog" it creates "xxxxxRANDOMpasswordxxxx". Then on subsequent log ins it does the same
+      thing and if you entered the password correctly they'll match</li>
+    <li>It also creates a "salt" that is 50ish characters that they tag onto the end of the "hash" to add even more
+      security</li>
+    <li>Don't worry, there's an existing system that makes these strong algorithms</li>
+    <li>So how do you lock parts of the app until you're logged in correctly? You lock your routes. AKA: authorization
+    </li>
+    <li>"User presence" lets user stay logged in as they navigate from page to page. Utilizes local storage. You get an
+      ID (short string) from which you create a TOKEN which is another (shorter, 20ish characters) randomized string of
+      text</li>
+    <li><b><a href="http://www.passportjs.org/">Passport</a></b></li>
+    <li>It's middleware (steps between front end and back end</li>
+    <li>There's numerous strategies (methods) for log ins. Due to time, we're gonna learn the easiest but least
+      interesting one (<a href="http://www.passportjs.org/packages/passport-local/"><b>passport-local</b></a>). But
+      there's others that are really cool (log in via FB for example)</li>
+    <li>Also need a plug in <a href="https://www.npmjs.com/package/passport-local-mongoose">passport-local-mongoose</a>
+      and <a href="http://www.passportjs.org/packages/passport-jwt/">passport-jwt</a> (JWT = json web token) and <a
+        href="https://www.npmjs.com/package/jsonwebtoken">jsonwebtoken</a></li>
+
+  </ul>
+
+
+  <h1>Tuesday, Sept 8, 2020</h1>
+  <ul>
+    <li>Access mongo terminal via: C: Program Files/ MongoDB/Server/4.4/bin/mongo</li>
+    <li><a href="https://docs.mongodb.com/manual/crud/">basic Mongo crud operations</a></li>
+    <li>show dbs</li>
+    <li>"use xxx_db" --- creates and lets you use a db all at once. Well, sorta. Schrodinger's db</li>
+    <li>similarly you can just jump right in with "db.dogs.insert(...." and it creates the dogs collection</li>
+    <li>"show collections" will bring up dogs</li>
+    <li>"db.dogs.find()" ==== shows all</li>
+    <li>"db.dogs.remove({ "name": "John" })" removes dog named John.</li>
+    <li>"db.dogs.update({ "name": "Beef" }, { $set: { age: 3 } })" changes Beef's age to 3.</li>
+    <li>Favorites activity....again!!! (for the last time)</li>
+    <li><b>Compass</b></li>
+    <li>Compass is the Mongo equivalent of Workbench for mySql --- more user friendly interface</li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>Thursday, 8/27/2020</h1>
+  <ul>
+    <li><b>MVC:</b> Model, View, Controller</li>
+    <li><b>Model:</b> the structure of what the data is going to be</li>
+    <li><b>View:</b> what's going to be on the screen. Usually the public folder</li>
+    <li><b>Controllers:</b> The routing, so usually the routes folder</li>
+    <li>In the server.js file, can put "{ force: true }" inside of the sync part of require('./db').sync() at the bottom
+      of the page. This dumps the table/data. Once you've done that, be sure to then take it out so it doesn't keep
+      dumping your table</li>
+    <li>Psuedo log ins</li>
+    <ul>
+      <li>within a post, use route '/users/login' => User.findOne --- see his notes</li>
+    </ul>
+    <li>pets: name, age, breed</li>
+    <li>Same routes as we had for user (minus the log in)</li>
+    <li>Activity: cars, make model, ??? for cars. Make it so user can have both cars and pets</li>
+  </ul>
+
+
+  <h1>Monday, 8/24/2020</h1>
+  <ul>
+    <li>Focusing on relational aspect of data</li>
+    <li>Doing a pets + owners</li>
+    <li>To be able to list owners before pets</li>
+    <li>Then for each pet, add owner_id to give each pet an owner</li>
+    <li>Foreign key = key from another table</li>
+    <li>REFERENCES tableName(field to reference)</li>
+    <li>FOREIGN KEY (owner_id) REFERENCES owners(id)</li>
+    <li>Join Queries: 4 different types</li>
+    <ul>
+      <li>Can call pet id to owner id make sure they both match. Where you grab the data they have in common. "Inner
+        Join" -- AKA: where you're calling where the venn diagrams overlap</li>
+      <li>"Left join" --- you want everything from the table, even if it doesn't have a match (aka: if you were trying
+        to match pets with owners but had some pets w/o owners....it'd give you the matches to the pets but then all the
+        other pets too</li>
+      <li>"Right join" --- give all owners even if they don't have pets, for owners with pets, give me their matched pet
+      </li>
+      <li>"Outer join" -- Give me anything that does not have a match (everything but the overlap)</li>
+      <li>"Full join" -- entire venn diagram, overlap, and each individual side ---- Cannot do this one in mySQL</li>
+    </ul>
+    <li>mySQL doesn't let you do a full join. So use both a left join and a right join together w/ a union statement
+    </li>
+    <li>When selecting from a table, can use structure "owners.name AS owner" to have that data display as owner instead
+      of name</li>
+    <li>"left" is the "from" table, and "right" is whatever comes after the join query.</li>
+    <li>We're gonna go through our HW as a class today.</li>
+    <li>Order of tasks</li>
+    <ol>
+      <li>Set up database tables we need</li>
+    </ol>
+    <li>Notes while working on tasks</li>
+    <ul>
+      <li>While setting up tables</li>
+      <ul>
+        <li>UNSIGNED = makes it so it'll only accept positive values</li>
+        <li>ON DELETE CASCADE = when the department w/ a specified id is deleted, that role is deleted too</li>
+      </ul>
+
+
+    </ul>
+  </ul>
+
+
+
+
+  <h1>Friday, 8/21/2020</h1>
+  <ul>
+    <li>Got our Project 2 groups. Mine: Brian, Danielle, and Matthew</li>
+    <li>In mySQL workbench...</li>
+    <li>You RARELY delete data. Sometimes archive it. But RARE to delete table or database entirely</li>
+    <li>For data value types, you can add in "UNIQUE" to make sure all data entries are unique. You can also add a
+      DEFAULT 'John Doe' for example.</li>
+    <li>It's generally good practice to give each table a unique ID.</li>
+    <li>His repo: MYSQL001</li>
+    <li>npm i mysql2</li>
+    <li>to get Heroku deployed w/ database:</li>
+    <ul>
+      <li>create Heroku</li>
+      <li>Open heroku, go to resources tab.</li>
+      <li>add ons, JawsDB MySQL</li>
+      <li>will ask for a cc info. But then pick free option</li>
+      <li>need to use connection uri: mysql://[username for database]:[password]@[host]/[database name]</li>
+      <li>Do that in in index.js: module.exports = all that. --- Then when you get it up on Heroku,there's similar info.
+        Change that module exports line to "modeule.exports = mysql.createConnection(prcoess.env.JAWSDB_URL || that
+        thing in the bullet above</li>
+    </ul>
+    <li>Project requirements</li>
+    <ul>
+      <li>Don't have to put or delete --- just get & post</li>
+      <li>Needs something new -- maybe a new NPM</li>
+    </ul>
+  </ul>
+
+
+
+
+
+
+
+
+
+  <h1>Thursday, 8/20/2020</h1>
+  <ul>
+    <li>Repo: mySQL001</li>
+    <li>Learning 2 databases in this class: mySQL and Mongo</li>
+    <li><b>My SQL</b></li>
+    <ul>
+      <li>SQL = Structured Query Language</li>
+      <li>It has rigid structure & sequence in how it operates</li>
+      <li>The tools you use to speak to the database</li>
+      <li>Rigidity of structure it reduces the chance of unexpected things happening in the database. Eg: you can say
+        this has to be a string, can't be empty, can limit number of characters. Control case (upper/lower). Etc</li>
+    </ul>
+    <li>There's only a 1-2% difference between how the various databases work. They're all built on SQL. The syntax is
+      almost identical between systems. So if you learn one, it's <i>really</i> easy to learn the others.</li>
+    <li>Other databases are "no SQL" databases. Not using the structured method</li>
+    <li>structured query languages work like a table w/ certain rows/columns</li>
+    <li>Eg:</li>
+    <table border="1px">
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Phone</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>41</td>
+        <td>555-555-5555</td>
+      </tr>
+    </table>
+    <li>No SQL acts more like a bucket you just throw things into them</li>
+    <li>The differences between the two are largely irrelevant now</li>
+    <li>In noSQL you'd use ODM to give it some degree of structure and organization here. ODM = object document mapper
+    </li>
+    <li>In the past: SQL was good for big data, noSQL was typically used for simple stuff. Now the only reason we use
+      SQL because people still use this out of habit. noSQL is typically easier (uses JS type synatx) and better to use.
+      noSQL is the more modern way</li>
+    <li>We'll use mySQL in Project 2</li>
+    <li>Will learn about noSQL after Project 2</li>
+    <li>mySQL = relational, noSQL = non-relational --- meaning it has to do w/ how we connect our data together.
+      Relational: Connect user data to their posts for example. Non-relational: doesn't inherently have tht, but you're
+      also able to use those other tools to create relationships</li>
+    <li>OK....about mySQL</li>
+    <li>it's a <i>new</i> language</li>
+    <li>Need to do some installation of tools to make it work</li>
+    <ul>
+      <li>Need to install: mySQL server and mySQL workbench</li>
+      <li>At one point it asks you for a password. MAKE SURE YOU WRITE IT DOWN. If you forget it, you have to totally
+        reinstall everything. Everyone can have "rootroot"</li>
+    </ul>
+    <li>strings are not a data type in mySQL. Different syntax here. ( note the ones in the list below is supposed to be
+      in caps) For SQL use:</li>
+    <ul>
+      <li>text</li>
+      <li>blob (works same)</li>
+      <li>tinytext (max length 255 char)</li>
+      <li>mediumtext</li>
+      <li>longtext</li>
+      <li>varchar (you set max length, up to 255) -- eg: VARCHAR(25) means up to 25 characters. Always add NOT NULL ---
+        so VARCHAR(25) NOT NULL</li>
+    </ul>
+    <li>Number values</li>
+    <ul>
+      <li>int (number value. stupid crazy max in the millions)</li>
+      <li>tiny int</li>
+    </ul>
+    <li>adding data to database</li>
+    <ul>
+      <li>INSERT INTO [name of table] ([which things to insert into, can list multiple separated by commas])</li>
+    </ul>
+    <li>midpoint check in w/ Jeff</li>
+    <ul>
+      <li></li>
+    </ul>
+  </ul>
+
+  <h1>Wednesday 8/19/2020</h1>
+  <ul>
+    <li>Still working in exp003</li>
+    <li>Heroku</li>
+    <ul>
+      <li>Heroku login -- this was a one time thing already done</li>
+      <li>Heroku create -- done within the repo, done once for each repo</li>
+      <li>git push heroku master -- pushes content to heroku project it created</li>
+      <li>When running things on Heroku, using port 3000 won't work. Heroku will use their own port that will change
+        over time based on what's available. Instead use: "app.listen(process.env.PORT)" ---- that's called an
+        environment variable. To keep it valid when we're working in development, add an "|| 3000" (or 3000)</li>
+      <li><a href="https://glacial-temple-13131.herokuapp.com/">Q's to-do list app on Heroku</a></li>
+      <li>Review:</li>
+      <ul>
+        <li>heroku log in (done, one time)</li>
+        <li>each repo: heroku create</li>
+        <li>Commit changes, push to github, push to heroku master</li>
+        <li>Rename heroku repo using "heroku apps:rename newname"</li>
+      </ul>
+    </ul>
+    <li>BIG activity: hot restaurant app:</li>
+    <ul>
+      <li>no starter code</li>
+      <li>remainder of class for activity</li>
+      <li>not really gonna review it, see what you can get done</li>
+      <li>(postponing mySequel to tomorrow -- meaning Monday HW moved to Tuesday due date given the delay)
+      <li>code from scratch</li>
+      <li>split to front end and back end teams</li>
+      <li>phases of development: back end team jobs and front end team jobs</li>
+      <li>view table reservations for a rest, make a reservation, name, phone, email, unique ID.</li>
+      <li>at least 5 reservations</li>
+      <li>multiple pages, multiple view routes</li>
+      <li>links to show us the json</li>
+      <li>It says use jQuery, don't. Use vanilla JS</li>
+      <li>reference to-do list code, not starwars activity</li>
+      <li>collaborate as team, use github team</li>
+      <li>under activities: week 6, folder: 15 hotrestaurant</li>
+      <li>they have diagrams as for how they're suppose to communicate w/ eachother</li>
+      <li>don't worry about style, functionality first</li>
+      <li>first decide who front end who back end</li>
+    </ul>
+
+
+
+  </ul>
+
+
+
+  <h1>Tuesday, 8/18/2020</h1>
+  <ul>
+    <li>To do params in postman, ---- fuck it, IDK</li>
+    <li>server.js folder should only have create server, middle whatever, and the 3000 thing</li>
+    <li>create routes folder: itemRoutes.js and index.js folder</li>
+    <li>Got super lost. It's in exp003</li>
+
+
+
+
+
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <h1>Monday, 8/17/2020</h1>
+  <ul>
+    <li>Front end requests (req) info from the server.</li>
+    <ul>
+      <li>route</li>
+      <li>query</li>
+      <li>params</li>
+    </ul>
+    <li>Server responds (res) to the front end</li>
+    <ul>
+      <li>status codes (like 404)</li>
+      <li>JSON data</li>
+      <li>Assets (HTML & CSS)</li>
+    </ul>
+    <li>Types of requests</li>
+    <ul>
+      <li>Get requests --- e.g. get me to-do list items, and server finds the to-do list, and sends it back -- also
+        known as HTTP (I think that was the abbreviation</li>
+      <li>Post --- aka: makes something new</li>
+      <li>Put --- e.g. mark a to-do list item as complete -- puts new data on server or modifies data on server</li>
+      <li>Delete --- exactly what it sounds like, deletes data from server</li>
+      <li>there's a few more, but these are the 4 main ones that we're using in this course</li>
+    </ul>
+    <li>Front end process of referencing the server is the AJAX and AXIOS processes, but referencing our own server now
+      instead of someone else's server</li>
+    <li>When a URL changes (e.g. adds "/user") is an example of routing</li>
+    <li>Server side coding makes up the rules that says "when the route looks like this, give me this"</li>
+    <li>Looking at the routes, this is where params and queries come into play, they write them using variables. e.g.
+      stackoverflow.com/questions/{id}/{title}</li>
+    <li>Q: "ok, let's go ahead and get started"</li>
+    <li>creates repo exp001</li>
+    <li>older version of creating routing</li>
+    <ul>
+      <li>Back before there were servers they could access w/ express</li>
+      <li>Teach computer to talk to itself. Request (req) sent to itself and respond (res) to itself. --- local host ---
+        running a server on your own device</li>
+      <li>If you want, you can buy a hardware server for your home OR you can use cloud based servers --- in class,
+        we're gonna use a cloud based one called Heroku (sp??)</li>
+      <li>Naming of files is going to start becoming particularly important</li>
+      <li>start with server.js --- note: naming it server, does not make it a server</li>
+      <li>see server.js file</li>
+      <li>host and server are synonyms</li>
+      <li>any time you're waiting for a page to load, you're waiting on the server's response</li>
+      <li>Run server using node server.js --- will run until you tell it to stop (ctrl+c twice will do that)</li>
+      <li>Starting a server does NOT make a request happen. You have to run a request to your server</li>
+      <li>TO do that: can use a 3rd party application (this is what we'll use: postman) OR write some front end OR type
+        it into the search bar for our URL</li>
+      <li>For this, type: "localhost.3000 --- if you hit enter to load it, it won't do anything w/o a request in the
+        browser, but it spits a TON of data into your terminal if you console.log the request. --- can ignore most of
+        it, but you need the url. Change console.log to (req.url)</li>
+      <li>Note: if you changed the code while server is running, it's not gonna show till you stop/restart the server.
+        Servers only work off of what the code was when you started the server</li>
+      <li>using that console.log(res.url), it returns a / only. It ignores all the prefix. If you add something after
+        your localhost.3000, it'll show that in the console.log. --- e.g. localhost.3000/something will return
+        /something --- or localhost.3000/something/something else returns /something/something else</li>
+      <li>If you add .split('/') to console log, it'll list them separately</li>
+    </ul>
+    <li>activities: calculator & favorites</li>
+    <li><b><u>Express</u></b></li>
+    <li>at some point in here </li>
+    <li><a href="https://expressjs.com/">Express</a> is a npm package</li>
+    <li>We probably want to start putting files in a folder. Anything front end is usually in a "public" folder</li>
+    <li><b><u>Postman</u></b></li>
+    <li>for testing other methods than "get"</li>
+    <li>but changing the verb doesn't necessarily change the action</li>
+    <li>Nodemon -- install using "npm i -g nodemon"</li>
+
+
+
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
