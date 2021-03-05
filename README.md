@@ -42,7 +42,7 @@ Most notes will be in other files, but some core ones I will place below.
 
 ##Links
 * [UCI Class PreWork](url: 'https://coding-bootcamp-fsf-prework.readthedocs-hosted.com/en/latest/')
-* [UCI Class Materials](url: 'https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-fsf-ft-07-2020-u-c')
+* [UCI Class Materials on GitLab](url: 'https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-fsf-ft-07-2020-u-c')
 
 ##Udemy
 Don't forget you have a udemy account with both patricia.downer and pat.downer85 email addresses.
