@@ -25,13 +25,16 @@ Most notes will be in other files, but some core ones I will place below.
 #####Other Installs
 * MAMP
 
+#####VS Code Font
+* [FiraCode](url: 'https://github.com/tonsky/FiraCode')
+
 #####VS Code Extensions
 * Auto Rename Tag by Jun Han
 * Bracket Pair Colorizer by CoenraadS
 * CSS Formatter by Martin Aeschlimann
 * css-auto-prefix by sporiley
 * Guides by spywhere
-* Hopscotch by idleberg
+* Hopscotch by idleberg -- color theme
 * Live Server by Ritwick Dey
 * Markdown Preview Enhanced by Yiyi Wang
 * Material Icon Theme by Philipp Kief

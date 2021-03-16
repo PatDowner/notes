@@ -5,23 +5,113 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bootcamp Class Notes</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- my css -->
+  <link rel="stylesheet" href="reviewNotes.css">
 </head>
 
-<body>
-  Review of Class Videos
+<body class="bg-dark">
+  <div class="container">
+    <h1 class="pt-3 text-white-50">Review of Class Videos</h1>
 
-  7/14/20
-  <ul>
-    <li></li>
-  </ul>
-  Date of class: 7/13/20
-  <ul>
-    <li>GitLab classwork: https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-fsf-ft-07-2020-u-c.git</li>
-  </ul>
+    <p class="text-white-50">Note: these notes are grouped in reverse chronological order by date of the relevant class. NOT by when I took
+      the
+      notes.</p>
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
+      <h3>9/14/20 - Intro to Webpack</h3>
+      <div class="col-2 pe-0">
 
+        <a href="https://bootcampspot.com/sessions/1125636/videos/97682">Video Link</a>
+      </div>
+      <div class="col-10 ps-0">
 
+        <ul>
+          <li><b>Repos: react001</b></li>
+          <li>React is a module based javascript library</li>
+          <li>To start a react app:</li>
+          <ul>
+            <li>Create repo (use lowercase only) & clone repo</li>
+            <li>NPM package to create react app: <b>npx create-react-app [foldername]</b></li>
+          </ul>
+          <li>Initial Setup/gutting:</li>
+          <ul>
+            <li>public</li>
+            <ul>
+              <li>Favicon</li>
+              <li>Logo files</li>
+              <li>index.html -- keep file, remove references to favicon and logo</li>
+            </ul>
+            <li>src</li>
+            <ul>
+              <li>app.css</li>
+              <li>test</li>
+              <li>index.css</li>
+              <li>logo</li>
+              <li>setup test file</li>
+              <li>index.js -- keep file, remove line importing index.css</li>
+              <li>App.js -- keep file, remove line importing logo & css files. Clear out return statement.</li>
+            </ul>
+          </ul>
+          <li>JSX = Javascript XML</li>
+          <ul>
+            <li>JSX is what lets us write HTML in the JS file.</li>
+            <li>JSX must all be in a single tag...can use dummy tags around everything use empty chevrons <> </>
+            </li>
+            <li>JSX requires you to add the slash at the end of self closing</li>
+            <li>some tags are different from HTML because they already exist in JS. E.g.: class ==> className, for ==>
+              htmlFor</li>
+            <!-- stopped at 3:03:07 for a break, about to dive into adding bootstrap -->
+          </ul>
+        </ul>
+      </div>
+    </div>
 
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
+      <h3>7/14/20 - Going Pro with HTML/CSS</h3>
+      <div class="col-2 pe-0">
+        <a href="https://bootcampspot.com/sessions/1125640/videos/90723">Video Link</a>
+      </div>
+      <div class="col-10 ps-0">
+        
+        <ul>
+          <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">VS Code keyboard
+            commands</a>
+          </li>
+          <li>Font: <a href="https://github.com/tonsky/FiraCode">FiraCode</a></li>
+          <li><a href="https://www.w3schools.com/tags/default.asp">basic html tags reference</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
+      <h3>7/13/20 - Zen of Coding</h3>
+      <div class="col-2 pe-0">
+        <a href="https://bootcampspot.com/sessions/1125639/videos/90570">Video Link</a>
+        <br><br>
+        <b>Repos:</b>
+        <br>
+        Quinton's
+        <br>
+        Mine: 
+        <a href="https://github.com/PatDowner/firsthtml">firsthtml</a>
+      </div>
+      <div class="col-10 ps-0">
+
+        <ul>
+          <li><a href="https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-fsf-ft-07-2020-u-c.git">GitLab
+              classwork
+              repo</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
