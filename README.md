@@ -20,6 +20,7 @@ Most notes will be in other files, but some core ones I will place below.
 * Discord
 * Zoom
 * Postman
+* [MongoDB](url: 'https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/') - note: class video didn't show download process
 * **Need to figure out installs for running MongoDB and Compass**
 
 #####Other Installs
