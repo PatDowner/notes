@@ -17,41 +17,44 @@
   <div class="container">
     <h1 class="pt-3 text-white-50">Review of Class Videos</h1>
 
-    <p class="text-white-50">Note: these notes are grouped in reverse chronological order by date of the relevant class. NOT by when I took
+    <p class="text-white-50">Note: these notes are grouped in reverse chronological order by date of the relevant class.
+      NOT by when I took
       the
       notes.</p>
 
-      <div class="row my-3 py-1 bg-secondary border rounded border-info">
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
       <h3>9/17/20 - Session 3 Forms and React Router</h3>
       <div class="col-2 pe-0">
-    
+
         <a href="https://bootcampspot.com/sessions/1125674/videos/98117">Video Link</a>
       </div>
       <div class="col-10 ps-0">
-    
+
         <ul>
           <li><b>Repos: react004</b></li>
           <li>Giphy API app</li>
-          <li>42:50 -- has trick for getting around if something isn't passed to a component yet: ternary check if thing exists, then render the component, if not, null</li>
-          <li>01:15ish -- teaching about adding a context to pass props down multiple layers more easily. Removes needs for props being passed</li>
+          <li>42:50 -- has trick for getting around if something isn't passed to a component yet: ternary check if thing
+            exists, then render the component, if not, null</li>
+          <li>01:15ish -- teaching about adding a context to pass props down multiple layers more easily. Removes needs
+            for props being passed</li>
           <li>01:44ish -- deploying on GitHub pages (b/c it's react w/ no backend)</li>
           <li>01:50ish -- react router</li>
           <ul>
             <li>npm i react-router-dom</li>
           </ul>
-          </ul>
+        </ul>
         </ul>
       </div>
     </div>
 
-      <div class="row my-3 py-1 bg-secondary border rounded border-info">
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
       <h3>9/16/20 - Session 2 React State</h3>
       <div class="col-2 pe-0">
-    
+
         <a href="https://bootcampspot.com/sessions/1125632/videos/97989">Video Link</a>
       </div>
       <div class="col-10 ps-0">
-    
+
         <ul>
           <li><b>Repos: react002, react003</b></li>
           <li>Component lifecycle maps & smart components -- old</li>
@@ -62,12 +65,12 @@
           <li>Going back to movie app, new app.js file</li>
           <li>useEffect</li>
           <li>activity: giphy API</li>
-          </ul>
+        </ul>
         </ul>
       </div>
     </div>
-    
-      <div class="row my-3 py-1 bg-secondary border rounded border-info">
+
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
       <h3>9/14/20 - Intro to Webpack</h3>
       <div class="col-2 pe-0">
 
@@ -116,16 +119,100 @@
       </div>
     </div>
 
+
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
+      <h3>9/09/20 - Session 2 Intro to Mongoose and IndexedDB</h3>
+      <div class="col-2 pe-0">
+
+        <a href="https://bootcampspot.com/sessions/1125626/videos/97064">Video Link</a>
+      </div>
+      <div class="col-10 ps-0">
+
+        <ul>
+          <li><b>Repos: mongo002, mongoose001</b></li>
+          <li>Note: The mongoose001 repo is something I created during a rewatch of this lesson, but is meant to be an exact replica of the mongo002 that Q creates during this lesson about Mongoose and the next one about authentication. I just want to start from scratch instead of following along in old files.</li>
+          <li>Intro: <a href="https://mongoosejs.com/">Mongoose</a> gives structure to MongoDB databases</li>
+          <li><i>Breakouts 2:48 to 20:58</i></li>
+          <li>Sequalize is an ORM (object, relational, mapper) that lets us structure data and how they relate</li>
+          <li>Mongoose is an ODM (object, document, mapper) that lets us do pretty much the same thing as an ORM but different name b/c it's not strictly relational</li>
+          <li>npm i express</li>
+          <li>npm i mongoose</li>
+          <li>need express and join method from path</li>
+          <li><b>Temporarily stopping at 32:29 -- had just finished basic set up about to start working on models</b></li>
+          <li>Schema is the layout of the data, model is the thing that gets put into the data.</li>
+          <li>Mongoose basically acts as a filter only allowing the data types you specify to get through to the DB</li>
+          <li>Push data, 42:20</li>
+          <li>test your routes in Postman</li>
+          <li>time stamps are not automatic, but you can add them with { timestamps: true} in your Item.js file in models folder. Add it to the end of the const Item part.</li>
+          <li><b>Note: he's using nodemon to start server...I forget how that is set up, also not sure if that's necessary once I'm using React</b></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="row my-3 py-1 bg-secondary border rounded border-info">
+      <h3>9/08/20 - Session 1 Masters of MongoDB</h3>
+      <div class="col-2 pe-0">
+
+        <a href="https://bootcampspot.com/sessions/1125628/videos/96942">Video Link</a>
+      </div>
+      <div class="col-10 ps-0">
+
+        <ul>
+          <li><b>Repos: mongo001</b></li>
+          <li>CRUD = Create, Read, Update, Delete</li>
+          <li>MongoDB is non-structured, has collections made up of documents of JSON data, non-relational</li>
+          <li>Review: MySQL is structured, tables, columns & rows, relational.</li>
+          <li>Mongoose lets you create relations in MongoDB</li>
+          <li>18:29 -- Opens mongo.exe from file path: C:\Program Files\MongoDB\Server\4.4\bin</li>
+          <li>show dbs = gives list of your existing databases</li>
+          <li>use collectionName_db = creates and has you using that database</li>
+          <li>db.dogs.insert({ "name": "Beef", "breed": "Chihuahua", "age": 2 }) ---- that creates the dog</li>
+          <li>you can add arrays to things like this, eg: add a list of children for a dog</li>
+          <li>db.dogs.find() ---- this gives you all things in the db</li>
+          <li>in the parens of find, you can add search terms</li>
+          <li>db.dogs.update({ "name": "Beef" }, {$set: { age: 3 } }) ---- so find dog named beef and change age to 3</li>
+          <li>db.dogs.remove({ "name": "John" }) ---- deletes dog John</li>
+          <li><i>Break: 33:06 to 2:01:07</i></li>
+          <li>Compass (starts at 2:01:40) is the workbench app for viewing/modifying your databases. Very intuitive UI for this. Can do everything in there.</li>
+          <li>Starts in VS Code at 2:08:22</li>
+          <li>index.js</li>
+          <li><a href="https://www.npmjs.com/package/mongojs">mongojs npm</a> -- he says we're only going to use this for one day</li>
+          <li>npm init -y</li>
+          <li>npm i mongojs</li>
+          <li>const mongojs = require('mongojs')</li>
+          <li>const db = mongojs('animals_db')</li>
+          <li>db.dogs.find({ name: 'Beef' }, (err, data) => {
+            if (err) {console.log(err) }
+            console.log(data)
+          })
+          </li>
+          <li>in terminal, typed "node index.js" to run it (2:11:36)</li>
+          <li>goes through rest of update, insert, remove</li>
+          <li>pushes data up 2:16:55</li>
+          <li><i>Break: 2:17:10 to 2:52:55</i></li>
+          <li>npm i inquirer</li>
+          <li>switch to favorites.js</li>
+          <li>walks through how to set up a simple interactive inquirer program to either view movies or add a movie</li>
+          <li>adds <a href="https://www.npmjs.com/package/console.table">console.table</a> to display movie data in terminal in a pretty table -- 3:02:36</li>
+          <li>have to require it at the top of file</li>
+          <li>pushes up code 3:03:45</li>
+          <li>sets up for tomorrow intro-ing mongoose</li>
+        </ul>
+      </div>
+    </div>
+
+
     <div class="row my-3 py-1 bg-secondary border rounded border-info">
       <h3>7/14/20 - Going Pro with HTML/CSS</h3>
       <div class="col-2 pe-0">
         <a href="https://bootcampspot.com/sessions/1125640/videos/90723">Video Link</a>
       </div>
       <div class="col-10 ps-0">
-        
+
         <ul>
           <li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">VS Code keyboard
-            commands</a>
+              commands</a>
           </li>
           <li>Font: <a href="https://github.com/tonsky/FiraCode">FiraCode</a></li>
           <li><a href="https://www.w3schools.com/tags/default.asp">basic html tags reference</a></li>
@@ -141,7 +228,7 @@
         <br>
         Quinton's
         <br>
-        Mine: 
+        Mine:
         <a href="https://github.com/PatDowner/firsthtml">firsthtml</a>
       </div>
       <div class="col-10 ps-0">
