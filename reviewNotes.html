@@ -142,10 +142,24 @@
           <li>Schema is the layout of the data, model is the thing that gets put into the data.</li>
           <li>Mongoose basically acts as a filter only allowing the data types you specify to get through to the DB</li>
           <li>Push data, 42:20</li>
-          <li>test your routes in Postman</li>
+          <li><i>Break 42:20 to 1:05:13</i></li>
+          <li>test your routes in Postman. Make sure you select "Body" immediately below the get/post/etc entry line, then "raw" and in the drop down to the right of "raw" select JSON</li>
           <li>time stamps are not automatic, but you can add them with { timestamps: true} in your Item.js file in models folder. Add it to the end of the const Item part.</li>
           <li><b>Note: he's using nodemon to start server...I forget how that is set up, also not sure if that's necessary once I'm using React</b></li>
-
+          <li>Push data, 1:22:20</li>
+          <li><i>Break: 1:22:20 to 1:45:22</i></li>
+          <li>Creating users model. Note, when you create a new model, don't forget to add it to the index.js file in the models folder.</li>
+          <li>Similarly, when you add a new route, add it to the index.js file for the routes</li>
+          <li>Push data, 1:58: 20</li>
+          <li><i>Break -- 1:58:20 to 3:00:28</i></li>
+          <li>3:01:00 -- add relationships between data items</li>
+          <li>Steps:</li>
+          <ul>
+            <li>Set up unique id as references to other collections of data, for both collections</li>
+            <li>Set up so that when you add one, you update the other grouping of data, that allows it to make sure user gets all items ids for example</li>
+            <li>use populate method on both models to make sure the data (not just the ID) gets transferred over</li>
+          </ul>
+          <li>push code 3:21:00, end of video</li>
         </ul>
       </div>
     </div>
